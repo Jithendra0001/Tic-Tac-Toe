@@ -1,0 +1,55 @@
+.hello{
+    width:600px;
+    height:600px;
+    position: relative;
+    /* border:2px solid black; */
+    margin:auto;
+    /* top:35px; */
+    box-shadow: 2px 2px 80px red;
+    box-sizing:border-box;
+}
+.new{
+    position: absolute;
+    width:200px;
+    height:200px;
+    /* border: 2bgpx solid rgba(0,0,0,0.1); */
+    box-sizing:border-box;
+    font-size:100px;
+    text-align:center;
+    box-shadow: 2px 2px 50px inset rgba(0, 0, 255,1);
+}
+.new:hover{
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    padding:30%;
+}
+button
+{
+    position:relative;
+    border:none;
+    width:170px;
+    height:55px;
+    background-color:rgba(255, 0, 0,0.9);
+    font-size:1.4rem;
+    color:#fff;
+    border-radius:7px;
+    cursor:pointer;
+}
+button::before{
+    content:"";
+    position:absolute;
+    top:0;left:0;
+    width:100%;height:100%;
+    background-color:blue;
+    z-index:-1;
+    border-radius:7px;
+    transform:translateY(5px);
+}
+button:active{
+    transform:translateY(5px);
+}
+button:active:before{
+    transform:translateY(0);
+}
